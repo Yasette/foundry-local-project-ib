@@ -1,0 +1,14 @@
+# Foundry Local Python SDK — modelleri indirir ve cihaz üzerinde çalıştırır.
+# ÖNEMLİ: Python 3.11, 3.12 veya 3.13 gerektirir (3.10 ve 3.14 desteklenmiyor).
+foundry-local-sdk>=1.2.3
+openai>=2.24.0
+
+# Belge okuma
+pypdf>=6.0.0
+python-docx>=1.1.0
+
+# Vektör hesapları (kosinüs benzerliği tek matris çarpımına iniyor)
+numpy>=2.0.0
+
+# Web arayüzü
+streamlit>=1.40.0

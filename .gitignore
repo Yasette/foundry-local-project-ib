@@ -1,0 +1,17 @@
+# Sanal ortam ve Python çöpleri
+.venv/
+__pycache__/
+*.py[cod]
+
+# --- ÖNEMLİ: kişisel ve telifli belgeler repoya girmez ---
+# Bu klasördeki IB yayınları telifli, kendi ödevlerin ise özel.
+# Depoyu klonlayan herkes kendi belgelerini buraya koyar.
+data/documents/*
+!data/documents/README.md
+
+# Üretilen veritabanı — 100+ MB olabilir ve herkesin kendi belgelerine göre
+# yeniden üretilmesi gerekir. `python ingest.py` bunu saniyeler içinde kurar.
+data/rag.db
+
+# macOS
+.DS_Store
