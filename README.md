@@ -14,6 +14,10 @@ Microsoft Foundry Local ile cihaz üzerinde çalışan dil modeli + RAG
 > `docs/screenshot.png` olarak kaydet, sonra bu satırın altına şunu ekle:
 > `![Arayüz](docs/screenshot.png)`
 
+📓 **[IB Notebook](docs/ib-notebook.md)** — Extended Essay, Internal Assessment
+ve TOK için ayrı bir linkli kaynak listesi (resmi ibo.org sayfaları +
+saygın üçüncü parti rehberler, işaretli).
+
 ---
 
 ## Ne işe yarıyor?
