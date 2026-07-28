@@ -389,7 +389,7 @@ programının çıktısıdır:
 | Hafta 3 — Veri işleme ve arama hattı | `src/loaders.py`, `src/chunker.py`, `ingest.py` |
 | Hafta 4 — LLM entegrasyonu ve arayüz | `src/backends.py`, `app.py` |
 | Hafta 5 — Test ve değerlendirme | `eval.py`, `eval_results.md` |
-| Hafta 6 — Dokümantasyon ve sunum | Bu README, `docs/`, `VIDEO_SCRIPT.md` |
+| Hafta 6 — Dokümantasyon ve sunum | Bu README, `docs/`, demo videosu |
 
 ---
 

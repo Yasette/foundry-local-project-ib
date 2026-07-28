@@ -13,5 +13,8 @@ data/documents/*
 # yeniden üretilmesi gerekir. `python ingest.py` bunu saniyeler içinde kurar.
 data/rag.db
 
+# Kişisel kullanım için — video çekimi kendi bilgisayarında kalsın, repoya girmez
+VIDEO_SCRIPT.md
+
 # macOS
 .DS_Store
