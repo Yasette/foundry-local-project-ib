@@ -237,7 +237,7 @@ def write_report(rows, passed, avg, total_time, embedding_name, chat_name, info)
     for i, row in enumerate(rows, start=1):
         case = row["case"]
         kind = "cevaplanabilir" if case.answerable else "cevaplanamaz"
-        mark = "✅ geçti" if row["ok"] else "❌ kaldı"
+        mark = "geçti" if row["ok"] else "kaldı"
         lines.append(
             f"| {i} | {case.question} | {kind} | {mark} | {row['elapsed']:.1f}s |"
         )
@@ -255,7 +255,7 @@ def write_report(rows, passed, avg, total_time, embedding_name, chat_name, info)
             "",
             f"*Tür:* {kind}  ",
             f"*Not:* {case.note}  ",
-            f"*Sonuç:* {'✅ geçti' if row['ok'] else '❌ kaldı'} — {row['reason']}  ",
+            f"*Sonuç:* {'geçti' if row['ok'] else 'kaldı'} — {row['reason']}  ",
             f"*Süre:* {row['elapsed']:.1f} sn",
             "",
             "**Cevap:**",

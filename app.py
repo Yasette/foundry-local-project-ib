@@ -18,7 +18,7 @@ import streamlit as st
 import config
 from src import backends, rag, store
 
-st.set_page_config(page_title="TOK Çalışma Asistanı", page_icon="📚", layout="centered")
+st.set_page_config(page_title="TOK Çalışma Asistanı", layout="centered")
 
 
 @st.cache_resource(show_spinner=False)
@@ -45,7 +45,7 @@ def boot():
     return assistant, info, embedder.name, chat.name
 
 
-st.title("📚 TOK Çalışma Asistanı")
+st.title("TOK Çalışma Asistanı")
 st.caption(
     "IB belgelerinden cevap veren, tamamen bu bilgisayarda çalışan asistan. "
     "İnternet gerekmez, hiçbir veri dışarı çıkmaz."
@@ -72,36 +72,44 @@ if info["chunks"] == 0:
 # --- Kenar çubuğu ------------------------------------------------------------
 
 with st.sidebar:
-    st.header("Ayarlar")
+    st.header("Elindeki belgeler")
+    st.write(
+        f"`data/documents/` klasöründeki **{info['documents']} belge** okundu. "
+        f"Aranabilmesi için bu belgeler toplam **{info['chunks']} küçük metin "
+        f"parçasına** bölündü (her parça yarım sayfa kadar)."
+    )
+    st.caption(
+        "Yeni belge eklemek için dosyayı o klasöre at, sonra terminalde "
+        "`python ingest.py` çalıştır."
+    )
+
+    st.divider()
+    st.header("Ayar")
     top_k = st.slider(
-        "Kaç belge parçası kullanılsın?",
+        "Cevap yazılırken kaç parça okunsun?",
         min_value=1,
         max_value=10,
         value=config.TOP_K,
         help=(
-            "Az olursa asistan yeterli bilgi bulamayabilir. "
-            "Çok olursa alakasız metin de karışır ve cevap yavaşlar."
+            f"Soru sorduğunda sistem {info['chunks']} parçanın hepsini tarayıp "
+            "sorunla en alakalı olanları seçiyor, sonra sadece o parçaları modele "
+            "okutup cevabı yazdırıyor.\n\n"
+            "Bu ayar kaç parçanın seçileceğini belirliyor:\n\n"
+            "- Az (1-2): cevap için yeterli bilgi bulunamayabilir\n"
+            "- Çok (8-10): alakasız metin de karışır, cevap yavaşlar"
         ),
     )
 
     st.divider()
-    st.header("Durum")
-    st.metric("İndekslenen belge", info["documents"])
-    st.metric("Metin parçası", info["chunks"])
-    st.caption(f"**Arama modeli:** `{embedding_name}`")
-    st.caption(f"**Cevap modeli:** `{chat_name}`")
-    st.caption(f"**Motor:** `{config.BACKEND}`")
+    st.header("Kullanılan modeller")
+    st.caption(f"Arama: `{embedding_name}`")
+    st.caption(f"Cevap: `{chat_name}`")
+    st.caption(f"Motor: `{config.BACKEND}`")
 
     st.divider()
     if st.button("Sohbeti temizle", use_container_width=True):
         st.session_state.messages = []
         st.rerun()
-
-    st.divider()
-    st.caption(
-        "Yeni belge eklemek için dosyaları `data/documents/` içine at ve "
-        "`python ingest.py` çalıştır."
-    )
 
 # --- Sohbet ------------------------------------------------------------------
 

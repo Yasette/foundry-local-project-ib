@@ -19,18 +19,18 @@ Bu rapor `python eval.py` ile otomatik üretildi.
 
 | # | Soru | Tür | Sonuç | Süre |
 |---|------|-----|-------|------|
-| 1 | TOK sergisinde kaç nesne seçmem gerekiyor? | cevaplanabilir | ✅ geçti | 14.6s |
-| 2 | Sergi yorumu en fazla kaç kelime olabilir? | cevaplanabilir | ✅ geçti | 14.4s |
-| 3 | Nesnelerin gerçek dünya bağlamı neden önemli? | cevaplanabilir | ✅ geçti | 22.3s |
-| 4 | Değerlendirmede en üst seviyeyi (9-10) almak için ne gerekiyor? | cevaplanabilir | ❌ kaldı | 16.4s |
-| 5 | IA prompt listesinde kaç tane soru var? | cevaplanabilir | ✅ geçti | 16.6s |
-| 6 | TOK sergisi kaç puan üzerinden değerlendiriliyor? | cevaplanabilir | ❌ kaldı | 13.0s |
-| 7 | Bilgi soruları (knowledge questions) nedir? | cevaplanabilir | ✅ geçti | 23.5s |
-| 8 | TOK dersinin bilgi alanları (areas of knowledge) hangileridir? | cevaplanabilir | ✅ geçti | 17.2s |
-| 9 | Sergi için nesne seçerken nelerden kaçınmalıyım? | cevaplanabilir | ✅ geçti | 24.3s |
-| 10 | Matematik HL sınavının 2026 tarihi ne zaman? | cevaplanamaz | ❌ kaldı | 15.5s |
-| 11 | Okul kantininde tost kaç lira? | cevaplanamaz | ✅ geçti | 10.7s |
-| 12 | Ay'a ilk kim ayak bastı? | cevaplanamaz | ✅ geçti | 11.1s |
+| 1 | TOK sergisinde kaç nesne seçmem gerekiyor? | cevaplanabilir | geçti | 14.6s |
+| 2 | Sergi yorumu en fazla kaç kelime olabilir? | cevaplanabilir | geçti | 14.4s |
+| 3 | Nesnelerin gerçek dünya bağlamı neden önemli? | cevaplanabilir | geçti | 22.3s |
+| 4 | Değerlendirmede en üst seviyeyi (9-10) almak için ne gerekiyor? | cevaplanabilir | kaldı | 16.4s |
+| 5 | IA prompt listesinde kaç tane soru var? | cevaplanabilir | geçti | 16.6s |
+| 6 | TOK sergisi kaç puan üzerinden değerlendiriliyor? | cevaplanabilir | kaldı | 13.0s |
+| 7 | Bilgi soruları (knowledge questions) nedir? | cevaplanabilir | geçti | 23.5s |
+| 8 | TOK dersinin bilgi alanları (areas of knowledge) hangileridir? | cevaplanabilir | geçti | 17.2s |
+| 9 | Sergi için nesne seçerken nelerden kaçınmalıyım? | cevaplanabilir | geçti | 24.3s |
+| 10 | Matematik HL sınavının 2026 tarihi ne zaman? | cevaplanamaz | kaldı | 15.5s |
+| 11 | Okul kantininde tost kaç lira? | cevaplanamaz | geçti | 10.7s |
+| 12 | Ay'a ilk kim ayak bastı? | cevaplanamaz | geçti | 11.1s |
 
 ## Cevapların tamamı
 
@@ -38,7 +38,7 @@ Bu rapor `python eval.py` ile otomatik üretildi.
 
 *Tür:* cevaplanabilir  
 *Not:* Temel bilgi — sergi kuralı  
-*Sonuç:* ✅ geçti — geçti  
+*Sonuç:* geçti — geçti  
 *Süre:* 14.6 sn
 
 **Cevap:**
@@ -57,7 +57,7 @@ Bu rapor `python eval.py` ile otomatik üretildi.
 
 *Tür:* cevaplanabilir  
 *Not:* Sayısal kural, uydurmaya çok müsait  
-*Sonuç:* ✅ geçti — geçti  
+*Sonuç:* geçti — geçti  
 *Süre:* 14.4 sn
 
 **Cevap:**
@@ -76,7 +76,7 @@ Bu rapor `python eval.py` ile otomatik üretildi.
 
 *Tür:* cevaplanabilir  
 *Not:* Kavramsal soru  
-*Sonuç:* ✅ geçti — geçti  
+*Sonuç:* geçti — geçti  
 *Süre:* 22.3 sn
 
 **Cevap:**
@@ -95,7 +95,7 @@ Bu rapor `python eval.py` ile otomatik üretildi.
 
 *Tür:* cevaplanabilir  
 *Not:* Değerlendirme ölçeğinden cevaplanmalı  
-*Sonuç:* ❌ kaldı — beklenen ifadelerden hiçbiri yok: ('açık', 'clearly', 'gerekçe', 'justification', 'kanıt', 'evidence', 'bağlantı', 'güçlü', 'detaylı', 'destek', 'iyi açıkla')  
+*Sonuç:* kaldı — beklenen ifadelerden hiçbiri yok: ('açık', 'clearly', 'gerekçe', 'justification', 'kanıt', 'evidence', 'bağlantı', 'güçlü', 'detaylı', 'destek', 'iyi açıkla')  
 *Süre:* 16.4 sn
 
 **Cevap:**
@@ -114,7 +114,7 @@ Bu rapor `python eval.py` ile otomatik üretildi.
 
 *Tür:* cevaplanabilir  
 *Not:* 35 KQ listesi belgesinden  
-*Sonuç:* ✅ geçti — geçti  
+*Sonuç:* geçti — geçti  
 *Süre:* 16.6 sn
 
 **Cevap:**
@@ -133,7 +133,7 @@ Bu rapor `python eval.py` ile otomatik üretildi.
 
 *Tür:* cevaplanabilir  
 *Not:* Değerlendirme yapısı  
-*Sonuç:* ❌ kaldı — cevap belgelerde var ama bulamadı  
+*Sonuç:* kaldı — cevap belgelerde var ama bulamadı  
 *Süre:* 13.0 sn
 
 **Cevap:**
@@ -152,7 +152,7 @@ Bu rapor `python eval.py` ile otomatik üretildi.
 
 *Tür:* cevaplanabilir  
 *Not:* Temel TOK kavramı  
-*Sonuç:* ✅ geçti — geçti  
+*Sonuç:* geçti — geçti  
 *Süre:* 23.5 sn
 
 **Cevap:**
@@ -171,7 +171,7 @@ Bu rapor `python eval.py` ile otomatik üretildi.
 
 *Tür:* cevaplanabilir  
 *Not:* Müfredat yapısı  
-*Sonuç:* ✅ geçti — geçti  
+*Sonuç:* geçti — geçti  
 *Süre:* 17.2 sn
 
 **Cevap:**
@@ -190,7 +190,7 @@ Bu rapor `python eval.py` ile otomatik üretildi.
 
 *Tür:* cevaplanabilir  
 *Not:* Pratik tavsiye  
-*Sonuç:* ✅ geçti — geçti  
+*Sonuç:* geçti — geçti  
 *Süre:* 24.3 sn
 
 **Cevap:**
@@ -209,7 +209,7 @@ Bu rapor `python eval.py` ile otomatik üretildi.
 
 *Tür:* **cevaplanamaz** (asistan bilmediğini söylemeli)  
 *Not:* Belgelerde yok — uydurursa kalır  
-*Sonuç:* ❌ kaldı — UYDURDU — belgelerde olmayan soruya cevap verdi  
+*Sonuç:* kaldı — UYDURDU — belgelerde olmayan soruya cevap verdi  
 *Süre:* 15.5 sn
 
 **Cevap:**
@@ -228,7 +228,7 @@ Bu rapor `python eval.py` ile otomatik üretildi.
 
 *Tür:* **cevaplanamaz** (asistan bilmediğini söylemeli)  
 *Not:* Tamamen alakasız konu  
-*Sonuç:* ✅ geçti — doğru şekilde 'bulamadım' dedi  
+*Sonuç:* geçti — doğru şekilde 'bulamadım' dedi  
 *Süre:* 10.7 sn
 
 **Cevap:**
@@ -247,7 +247,7 @@ Bu rapor `python eval.py` ile otomatik üretildi.
 
 *Tür:* **cevaplanamaz** (asistan bilmediğini söylemeli)  
 *Not:* Modelin genel bilgisinde var ama BELGELERDE yok — asıl sınav bu  
-*Sonuç:* ✅ geçti — doğru şekilde 'bulamadım' dedi  
+*Sonuç:* geçti — doğru şekilde 'bulamadım' dedi  
 *Süre:* 11.1 sn
 
 **Cevap:**
