@@ -7,7 +7,7 @@ cihazdan dışarı çıkmıyor.
 Microsoft Foundry Local ile cihaz üzerinde çalışan bir dil modeli ve RAG
 (Retrieval-Augmented Generation) yöntemi kullanıyor.
 
-Demo videosu (2 dk): `<DRIVE_LINKINI_BURAYA_YAPIŞTIR>`
+Demo videosu: [Google Drive](https://drive.google.com/file/d/1R2YNGmKpVFF_aBGiVEGERRXxDblhc1hs/view?usp=sharing)
 
 Ayrıca: [IB Notebook](docs/ib-notebook.md) — Extended Essay, Internal Assessment
 ve TOK için topladığım kaynak listesi.
